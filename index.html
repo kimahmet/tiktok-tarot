@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TikTok Tarot</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <main>
+    <h1>✦ TikTok Tarot ✦</h1>
+    <p class="lead">TikTok verilerinden sana özel bir tarot kartı. Dosyan tarayıcında işlenir, hiçbir sunucuya gönderilmez.</p>
+
+    <section>
+      <h2>1. Verini indir</h2>
+      <p>TikTok → Profil → ☰ → Ayarlar ve gizlilik → Hesap → <b>Verilerini indir</b>. Format olarak <b>JSON</b> seç. Dosyanın hazırlanması birkaç saat sürebilir.</p>
+    </section>
+
+    <section>
+      <h2>2. Dosyayı yükle</h2>
+      <label class="drop">
+        <input id="file" type="file" accept=".zip,.json,application/json,application/zip">
+        <span>.zip veya .json dosyasını seç</span>
+      </label>
+      <p id="status" role="status" aria-live="polite"></p>
+    </section>
+
+    <section id="result" hidden>
+      <h2>3. Kartını oluştur</h2>
+      <p id="stats" class="muted"></p>
+      <label for="prompt">Prompt'un hazır. İstersen düzenle, sonra kopyala:</label>
+      <textarea id="prompt" rows="14"></textarea>
+      <div class="row">
+        <button id="copy" type="button">Prompt'u kopyala</button>
+        <a href="https://chatgpt.com/" target="_blank" rel="noopener">ChatGPT'yi aç ↗</a>
+        <a href="https://gemini.google.com/app" target="_blank" rel="noopener">Gemini'yi aç ↗</a>
+      </div>
+      <p class="muted">Yapıştır, gönder: kartın görseli ve okuman orada çıkacak.</p>
+      <button id="clear" type="button" class="ghost">Verilerimi bu cihazdan sil</button>
+    </section>
+  </main>
+</body>
+</html>
