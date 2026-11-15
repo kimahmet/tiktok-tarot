@@ -2,6 +2,10 @@
 
 Builds a personal tarot card prompt from a TikTok data export. The user pastes the prompt into their own ChatGPT or Gemini, which makes the card image and reading. No backend, no API keys.
 
+**Live:** https://kimahmet.github.io/tiktok-tarot/
+
+<img src="docs/screenshot.jpg" alt="TikTok Tarot: upload a TikTok export, get a ready-to-paste tarot prompt" width="460">
+
 ## Privacy
 
 - The export is parsed in the browser. Nothing is uploaded.
